@@ -63,12 +63,12 @@ return (
         </nav>
         <main className="flex flex-col items-center justify-center flex-grow mt-10">
             {userName && (
-                <h1 className="text-4xl font-bold mb-6 ml-10">
-                    WELCOME , {userName}!
-                    <h1 className="text-4xl font-bold mt-6 ml-10"> CONGRATULATIONS </h1>
-                </h1>
+            <div className="text-center">
+                <h1 className="text-4xl font-bold mb-6 ml-10"> WELCOME , {userName} !</h1>
+                <h1 className="text-4xl font-bold mt-6 ml-10"> CONGRATULATIONS! You have Successfully Logged In!</h1>
+                </div>
             )}
-            <div className="space-x-4">
+            <div className="mt-8 space-x-6">
                 <button
                 onClick={handleLogout}
                 className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
